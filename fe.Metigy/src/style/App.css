@@ -1,0 +1,564 @@
+.App {
+  width: 80%;
+  background-color: #243851;
+  margin: 100px auto;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .flex-item {
+  width: 30%;
+  margin: 0 20px;
+  background-color: #253147;
+}
+
+.App .flex-item:last-child {
+  width: 50%;
+}
+
+.App .keywords-wrapper {
+  color: white;
+}
+
+.App .keywords-wrapper .keywords-header {
+  background-color: #243851;
+  font-size: 2rem;
+  vertical-align: middle;
+  margin: 0;
+  line-height: 50px;
+  padding: 20px 0;
+}
+
+.App .keywords-wrapper .keywords-body button {
+  padding: 4px 8px;
+}
+
+.App .keywords-wrapper .keywords-body .input-wrapper {
+  padding: 20px;
+  border-bottom: 2px solid #283951;
+}
+
+.App .keywords-wrapper .keywords-body .ant-list {
+  border: none;
+}
+
+.App .keywords-wrapper .keywords-body .ant-list button {
+  background-color: transparent;
+  border: 2px solid #283951;
+}
+
+.App .keywords-wrapper .keywords-body .ant-list .ant-list-header {
+  display: none;
+}
+
+.App .keywords-wrapper .keywords-body .ant-list .ant-list-footer {
+  display: none;
+}
+
+.App .keywords-wrapper .keywords-body .ant-list .ant-list-item {
+  border: none;
+  color: white;
+  padding: 10px 24px;
+}
+
+.App .keywords-wrapper .keywords-body .ant-list .ant-list-item:last-child {
+  border-bottom: none;
+}
+
+.App .sites-wrapper {
+  color: white;
+}
+
+.App .sites-wrapper .sites-header {
+  background-color: #243851;
+  font-size: 2rem;
+  vertical-align: middle;
+  margin: 0;
+  line-height: 50px;
+  padding: 20px 0;
+}
+
+.App .sites-wrapper .sites-body button {
+  padding: 4px 8px;
+}
+
+.App .sites-wrapper .sites-body .input-wrapper {
+  padding: 20px;
+  border-bottom: 2px solid #283951;
+}
+
+.App .sites-wrapper .sites-body .input-wrapper button {
+  background-color: green;
+  border-color: green;
+}
+
+.App .sites-wrapper .sites-body .ant-list {
+  border: none;
+}
+
+.App .sites-wrapper .sites-body .ant-list button {
+  background-color: transparent;
+  border: 2px solid #283951;
+}
+
+.App .sites-wrapper .sites-body .ant-list .ant-list-header {
+  display: none;
+}
+
+.App .sites-wrapper .sites-body .ant-list .ant-list-footer {
+  display: none;
+}
+
+.App .sites-wrapper .sites-body .ant-list .ant-list-item {
+  border: none;
+  color: white;
+  padding: 10px 24px;
+}
+
+.App .sites-wrapper .sites-body .ant-list .ant-list-item:last-child {
+  border-bottom: none;
+}
+
+.App .settings-wrapper {
+  color: white;
+}
+
+.App .settings-wrapper .settings-header {
+  background-color: #243851;
+  font-size: 2rem;
+  vertical-align: middle;
+  margin: 0;
+  line-height: 50px;
+  padding: 20px 0;
+}
+
+.App .settings-wrapper .settings-body .browser-selection {
+  height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #283951;
+}
+
+.App .settings-wrapper .settings-body .browser-selection .browser-wrapper {
+  height: 88px;
+  padding: 20px;
+  border-right: 2px solid #283951;
+}
+
+.App .settings-wrapper .settings-body .browser-selection .browser-wrapper label {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: white;
+  line-height: 28px;
+  margin: 5px 2px;
+  padding-left: 5px;
+  border: 2px solid #283951;
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App .settings-wrapper .settings-body .browser-selection .browser-wrapper label .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #fdbe01;
+  border-color: #fdbe01;
+}
+
+.App .settings-wrapper .settings-body .browser-selection .incognito-wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.App .settings-wrapper .settings-body .browser-selection .incognito-wrapper label {
+  color: white;
+  line-height: 28px;
+  padding-left: 5px;
+  margin: 5px 5px;
+  border: 2px solid #283951;
+  font-size: 12px;
+}
+
+.App .settings-wrapper .settings-body .browser-selection .incognito-wrapper label .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #fdbe01;
+  border-color: #fdbe01;
+}
+
+.App .settings-wrapper .settings-body .settings-info {
+  padding: 20px;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-time p {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-time .outter-wrapper {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-time .outter-wrapper .calculator-wrapper {
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #283951;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-time .outter-wrapper .calculator-wrapper .num-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  line-height: 30px;
+  margin: 0;
+  border-right: 1px solid #283951;
+  text-align: center;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-time .outter-wrapper .calculator-wrapper .pm-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-time .outter-wrapper .calculator-wrapper .pm-part .plus-part {
+  line-height: 14px;
+  border-bottom: 1px solid #283951;
+  color: white;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-time .outter-wrapper .calculator-wrapper .pm-part .minus-part {
+  line-height: 14px;
+  color: white;
+}
+
+.App .settings-wrapper .settings-body .settings-info .ant-checkbox-wrapper {
+  margin: 20px 10px;
+  color: white;
+  font-size: 1rem;
+}
+
+.App .settings-wrapper .settings-body .settings-info .pages-visit p {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.App .settings-wrapper .settings-body .settings-info .pages-visit .outter-wrapper {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.App .settings-wrapper .settings-body .settings-info .pages-visit .outter-wrapper .calculator-wrapper {
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #283951;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .settings-wrapper .settings-body .settings-info .pages-visit .outter-wrapper .calculator-wrapper .num-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  line-height: 30px;
+  margin: 0;
+  border-right: 1px solid #283951;
+  text-align: center;
+}
+
+.App .settings-wrapper .settings-body .settings-info .pages-visit .outter-wrapper .calculator-wrapper .pm-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.App .settings-wrapper .settings-body .settings-info .pages-visit .outter-wrapper .calculator-wrapper .pm-part .plus-part {
+  line-height: 14px;
+  border-bottom: 1px solid #283951;
+  color: white;
+}
+
+.App .settings-wrapper .settings-body .settings-info .pages-visit .outter-wrapper .calculator-wrapper .pm-part .minus-part {
+  line-height: 14px;
+  color: white;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-after-ope {
+  margin: 20px 0px;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-after-ope p {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-after-ope .outter-wrapper {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-after-ope .outter-wrapper .calculator-wrapper {
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #283951;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-after-ope .outter-wrapper .calculator-wrapper .num-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  line-height: 30px;
+  margin: 0;
+  border-right: 1px solid #283951;
+  text-align: center;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-after-ope .outter-wrapper .calculator-wrapper .pm-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-after-ope .outter-wrapper .calculator-wrapper .pm-part .plus-part {
+  line-height: 14px;
+  border-bottom: 1px solid #283951;
+  color: white;
+}
+
+.App .settings-wrapper .settings-body .settings-info .wait-after-ope .outter-wrapper .calculator-wrapper .pm-part .minus-part {
+  line-height: 14px;
+  color: white;
+}
+
+.App .settings-wrapper .settings-body .settings-info .not-found-wait {
+  margin: 20px 0px;
+}
+
+.App .settings-wrapper .settings-body .settings-info .not-found-wait p {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.App .settings-wrapper .settings-body .settings-info .not-found-wait .outter-wrapper {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.App .settings-wrapper .settings-body .settings-info .not-found-wait .outter-wrapper .calculator-wrapper {
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #283951;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .settings-wrapper .settings-body .settings-info .not-found-wait .outter-wrapper .calculator-wrapper .num-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  line-height: 30px;
+  margin: 0;
+  border-right: 1px solid #283951;
+  text-align: center;
+}
+
+.App .settings-wrapper .settings-body .settings-info .not-found-wait .outter-wrapper .calculator-wrapper .pm-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.App .settings-wrapper .settings-body .settings-info .not-found-wait .outter-wrapper .calculator-wrapper .pm-part .plus-part {
+  line-height: 14px;
+  border-bottom: 1px solid #283951;
+  color: white;
+}
+
+.App .settings-wrapper .settings-body .settings-info .not-found-wait .outter-wrapper .calculator-wrapper .pm-part .minus-part {
+  line-height: 14px;
+  color: white;
+}
+
+.App .settings-wrapper .settings-body .settings-info .auto-reset {
+  margin: 20px 0px;
+}
+
+.App .settings-wrapper .settings-body .settings-info .auto-reset p {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.App .settings-wrapper .settings-body .settings-info .auto-reset .outter-wrapper {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.App .settings-wrapper .settings-body .settings-info .auto-reset .outter-wrapper .calculator-wrapper {
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #283951;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .settings-wrapper .settings-body .settings-info .auto-reset .outter-wrapper .calculator-wrapper .num-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  line-height: 30px;
+  margin: 0;
+  border-right: 1px solid #283951;
+  text-align: center;
+}
+
+.App .settings-wrapper .settings-body .settings-info .auto-reset .outter-wrapper .calculator-wrapper .pm-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.App .settings-wrapper .settings-body .settings-info .auto-reset .outter-wrapper .calculator-wrapper .pm-part .plus-part {
+  line-height: 14px;
+  border-bottom: 1px solid #283951;
+  color: white;
+}
+
+.App .settings-wrapper .settings-body .settings-info .auto-reset .outter-wrapper .calculator-wrapper .pm-part .minus-part {
+  line-height: 14px;
+  color: white;
+}
+
+.App .settings-wrapper .block-part {
+  width: 100%;
+  height: 30px;
+  background-color: #243851;
+}
+
+.App .settings-wrapper .controller-wrapper .controller-selection {
+  height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #283951;
+}
+
+.App .settings-wrapper .controller-wrapper .controller-selection .controller-info-wrapper {
+  height: 88px;
+  padding: 20px;
+}
+
+.App .settings-wrapper .controller-wrapper .controller-selection .controller-info-wrapper label {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: white;
+  line-height: 28px;
+  margin: 5px 5px;
+  padding-left: 5px;
+  border: 2px solid #283951;
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App .settings-wrapper .controller-wrapper .controller-selection .controller-info-wrapper label .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: green;
+  border-color: green;
+}
+
+.App .settings-wrapper .controller-wrapper .other-settings {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .settings-wrapper .controller-wrapper .other-settings .oSettings-info-wrapper {
+  height: 120px;
+  padding: 20px;
+}
+
+.App .settings-wrapper .controller-wrapper .other-settings .oSettings-info-wrapper label {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: white;
+  line-height: 28px;
+  margin: 5px 5px;
+  padding-left: 5px;
+  border: 2px solid #283951;
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App .settings-wrapper .btn-wrapper {
+  background-color: #243851;
+}
+
+.App .settings-wrapper .btn-wrapper button {
+  margin: 20px 10px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.App .settings-wrapper .btn-wrapper button:first-child {
+  margin-left: 0px;
+  width: 39%;
+  background-color: #fdbe01;
+  border-color: #fdbe01;
+}
+
+.App .settings-wrapper .btn-wrapper button:nth-child(2) {
+  width: 27%;
+}
+
+.App .settings-wrapper .btn-wrapper button:nth-child(3) {
+  width: 27%;
+  margin-right: 0px;
+  background-color: green;
+  border-color: green;
+}
+/*# sourceMappingURL=App.css.map */

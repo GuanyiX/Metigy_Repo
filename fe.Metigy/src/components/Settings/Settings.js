@@ -1,20 +1,44 @@
+'use strict';
+
 import React from 'react';
 import { Checkbox } from 'antd';
 import Calculator from '../Calculator';
 import Controller from './components/Controller';
 import ButtonCluster from './components/ButtonCluster';
+import Axios from 'axios';
 
 import store from '../../store';
+import { url_default } from "../../api/index";
 
 
 
 class Settings extends React.Component {
+    
     constructor() {
         super()
 
         this.state = store.getState().settingsReducer
 
         store.subscribe(this.handleStoreChange);
+    }
+
+    async componentDidMount() {
+
+        try{
+            const res = await Axios.get(url_default);
+            const { data } = res;
+    
+            const action = {
+                type: "INIT_SETTINGS",
+                data
+            }
+    
+            store.dispatch(action);
+        }catch{
+            alert("Errors: Get settings from database")
+        }
+
+        
     }
 
     handleIncognitoClick = () => {

@@ -1,10 +1,10 @@
 'use strict';
 
-const DB = require('../../db/mysqlDB');
+const DB = require('../../../db/mysqlDB');
 
 module.exports = async (ctx) => {
 
-    let res = await DB.query('SELECT * FROM updatedinfo');
+    let res = await DB.query('SELECT * FROM updatedinfo;');
     res = { ...JSON.parse(JSON.stringify(res)) };
 
     if (res) {

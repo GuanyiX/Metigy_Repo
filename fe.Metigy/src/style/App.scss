@@ -1,0 +1,534 @@
+$bg-color: #243851;
+$main-color: #253147;
+$border-color: #283951;
+$input-color: #fdbe01;
+
+.App {
+  width: 80%;
+  background-color: $bg-color;
+
+  margin: 100px auto;
+  padding: 40px;
+
+  display: flex;
+
+  .flex-item {
+    width: 30%;
+    margin: 0 20px;
+    background-color: $main-color;
+
+    &:last-child {
+      width: 50%;
+    }
+  }
+
+  .keywords-wrapper {
+    color: white;
+
+    .keywords-header {
+      background-color: $bg-color;
+      font-size: 2rem;
+      vertical-align: middle;
+      margin: 0;
+      line-height: 50px;
+      padding: 20px 0;
+    }
+
+    .keywords-body {
+      button {
+        padding: 4px 8px;
+      }
+
+      .input-wrapper {
+        padding: 20px;
+        border-bottom: 2px solid $border-color;
+      }
+
+      .ant-list {
+        border: none;
+
+        button {
+          background-color: transparent;
+          border: 2px solid $border-color;
+        }
+
+        .ant-list-header {
+          display: none;
+        }
+
+        .ant-list-footer {
+          display: none;
+        }
+
+        .ant-list-item {
+          border: none;
+          color: white;
+          padding: 10px 24px;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  .sites-wrapper {
+    color: white;
+
+    .sites-header {
+      background-color: $bg-color;
+      font-size: 2rem;
+      vertical-align: middle;
+      margin: 0;
+      line-height: 50px;
+      padding: 20px 0;
+    }
+
+    .sites-body {
+      button {
+        padding: 4px 8px;
+      }
+
+      .input-wrapper {
+        padding: 20px;
+        border-bottom: 2px solid $border-color;
+
+        button {
+          background-color: green;
+          border-color: green;
+        }
+      }
+
+      .ant-list {
+        border: none;
+
+        button {
+          background-color: transparent;
+          border: 2px solid $border-color;
+        }
+
+        .ant-list-header {
+          display: none;
+        }
+
+        .ant-list-footer {
+          display: none;
+        }
+
+        .ant-list-item {
+          border: none;
+          color: white;
+          padding: 10px 24px;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  .settings-wrapper {
+    color: white;
+
+    .settings-header {
+      background-color: $bg-color;
+      font-size: 2rem;
+      vertical-align: middle;
+      margin: 0;
+      line-height: 50px;
+      padding: 20px 0;
+    }
+
+    .settings-body {
+      .browser-selection {
+        height: 88px;
+        display: flex;
+        border-bottom: 2px solid $border-color;
+
+        .browser-wrapper {
+          height: 88px;
+          padding: 20px;
+          border-right: 2px solid $border-color;
+
+          label {
+            flex-grow: 1;
+            color: white;
+            line-height: 28px;
+            margin: 5px 2px;
+            padding-left: 5px;
+            border: 2px solid $border-color;
+            font-size: 10px;
+            box-sizing: border-box;
+
+            .ant-checkbox-checked .ant-checkbox-inner {
+              background-color: $input-color;
+              border-color: $input-color;
+            }
+          }
+        }
+
+        .incognito-wrapper {
+          // flex-grow: 1;
+          text-align: center;
+          padding: 20px;
+
+          label {
+            color: white;
+            line-height: 28px;
+            padding-left: 5px;
+            margin: 5px 5px;
+            border: 2px solid $border-color;
+            font-size: 12px;
+
+            .ant-checkbox-checked .ant-checkbox-inner {
+              background-color: $input-color;
+              border-color: $input-color;
+            }
+          }
+        }
+      }
+
+      .settings-info {
+        padding: 20px;
+
+        .wait-time {
+          p {
+            display: inline-block;
+            line-height: 30px;
+            margin: 0 10px;
+            font-size: 1rem;
+          }
+
+          .outter-wrapper {
+            display: inline-block;
+            margin: 0 10px;
+
+            .calculator-wrapper {
+              width: 60px;
+              height: 30px;
+              background-color: transparent;
+              border: 1px solid $border-color;
+              display: flex;
+
+              .num-part {
+                flex: 1 1 60%;
+                line-height: 30px;
+                margin: 0;
+                border-right: 1px solid $border-color;
+                text-align: center;
+              }
+
+              .pm-part {
+                flex: 1 1 40%;
+                line-height: 30px;
+                margin: 0;
+                text-align: center;
+
+                .plus-part {
+                  line-height: 14px;
+                  border-bottom: 1px solid $border-color;
+                  color: white;
+                }
+
+                .minus-part {
+                  line-height: 14px;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+
+        .ant-checkbox-wrapper {
+          margin: 20px 10px;
+          color: white;
+          font-size: 1rem;
+        }
+
+        .pages-visit {
+          p {
+            display: inline-block;
+            line-height: 30px;
+            margin: 0 10px;
+            font-size: 1rem;
+          }
+
+          .outter-wrapper {
+            display: inline-block;
+            margin: 0 10px;
+
+            .calculator-wrapper {
+              width: 60px;
+              height: 30px;
+              background-color: transparent;
+              border: 1px solid $border-color;
+              display: flex;
+
+              .num-part {
+                flex: 1 1 60%;
+                line-height: 30px;
+                margin: 0;
+                border-right: 1px solid $border-color;
+                text-align: center;
+              }
+
+              .pm-part {
+                flex: 1 1 40%;
+                line-height: 30px;
+                margin: 0;
+                text-align: center;
+
+                .plus-part {
+                  line-height: 14px;
+                  border-bottom: 1px solid $border-color;
+                  color: white;
+                }
+
+                .minus-part {
+                  line-height: 14px;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+
+        .wait-after-ope {
+          margin: 20px 0px;
+          p {
+            display: inline-block;
+            line-height: 30px;
+            margin: 0 10px;
+            font-size: 1rem;
+          }
+
+          .outter-wrapper {
+            display: inline-block;
+            margin: 0 10px;
+
+            .calculator-wrapper {
+              width: 60px;
+              height: 30px;
+              background-color: transparent;
+              border: 1px solid $border-color;
+              display: flex;
+
+              .num-part {
+                flex: 1 1 60%;
+                line-height: 30px;
+                margin: 0;
+                border-right: 1px solid $border-color;
+                text-align: center;
+              }
+
+              .pm-part {
+                flex: 1 1 40%;
+                line-height: 30px;
+                margin: 0;
+                text-align: center;
+
+                .plus-part {
+                  line-height: 14px;
+                  border-bottom: 1px solid $border-color;
+                  color: white;
+                }
+
+                .minus-part {
+                  line-height: 14px;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+
+        .not-found-wait {
+          margin: 20px 0px;
+          p {
+            display: inline-block;
+            line-height: 30px;
+            margin: 0 10px;
+            font-size: 1rem;
+          }
+
+          .outter-wrapper {
+            display: inline-block;
+            margin: 0 10px;
+
+            .calculator-wrapper {
+              width: 60px;
+              height: 30px;
+              background-color: transparent;
+              border: 1px solid $border-color;
+              display: flex;
+
+              .num-part {
+                flex: 1 1 60%;
+                line-height: 30px;
+                margin: 0;
+                border-right: 1px solid $border-color;
+                text-align: center;
+              }
+
+              .pm-part {
+                flex: 1 1 40%;
+                line-height: 30px;
+                margin: 0;
+                text-align: center;
+
+                .plus-part {
+                  line-height: 14px;
+                  border-bottom: 1px solid $border-color;
+                  color: white;
+                }
+
+                .minus-part {
+                  line-height: 14px;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+
+        .auto-reset {
+          margin: 20px 0px;
+          p {
+            display: inline-block;
+            line-height: 30px;
+            margin: 0 10px;
+            font-size: 1rem;
+          }
+
+          .outter-wrapper {
+            display: inline-block;
+            margin: 0 10px;
+
+            .calculator-wrapper {
+              width: 60px;
+              height: 30px;
+              background-color: transparent;
+              border: 1px solid $border-color;
+              display: flex;
+
+              .num-part {
+                flex: 1 1 60%;
+                line-height: 30px;
+                margin: 0;
+                border-right: 1px solid $border-color;
+                text-align: center;
+              }
+
+              .pm-part {
+                flex: 1 1 40%;
+                line-height: 30px;
+                margin: 0;
+                text-align: center;
+
+                .plus-part {
+                  line-height: 14px;
+                  border-bottom: 1px solid $border-color;
+                  color: white;
+                }
+
+                .minus-part {
+                  line-height: 14px;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .block-part {
+      width: 100%;
+      height: 30px;
+      background-color: $bg-color;
+    }
+
+    .controller-wrapper {
+      .controller-selection {
+        height: 88px;
+        display: flex;
+        border-bottom: 2px solid $border-color;
+
+        .controller-info-wrapper {
+          height: 88px;
+          padding: 20px;
+
+          label {
+            flex-grow: 1;
+            color: white;
+            line-height: 28px;
+            margin: 5px 5px;
+            padding-left: 5px;
+            border: 2px solid $border-color;
+            font-size: 10px;
+            box-sizing: border-box;
+
+            .ant-checkbox-checked .ant-checkbox-inner {
+              background-color: green;
+              border-color: green;
+            }
+          }
+        }
+      }
+
+      .other-settings {
+        height: 120px;
+        display: flex;
+
+        .oSettings-info-wrapper {
+          height: 120px;
+          padding: 20px;
+
+          label {
+            flex-grow: 1;
+            color: white;
+            line-height: 28px;
+            margin: 5px 5px;
+            padding-left: 5px;
+            border: 2px solid $border-color;
+            font-size: 10px;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+
+    .btn-wrapper {
+        background-color: $bg-color;
+
+        button {
+            margin: 20px 10px; 
+            height: 50px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            &:first-child {
+                margin-left: 0px;
+                width: 39%;
+                background-color: $input-color;
+                border-color: $input-color;
+            }
+
+            &:nth-child(2) {
+                width: 27%;
+                
+            }
+
+            &:nth-child(3) {
+                width: 27%;
+                margin-right: 0px;
+                background-color: green;
+                border-color: green;
+            }
+        }
+    }
+  }
+}

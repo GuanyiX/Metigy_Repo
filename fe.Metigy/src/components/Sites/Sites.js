@@ -1,10 +1,13 @@
-import React, { Fragment } from 'react';
-// import kwLogo from '../images/Keywords-logo.png';
+'use strict';
+
+import React from 'react';
 import { Input, Button, List } from 'antd';
 import 'antd/dist/antd.css';
 import { PlusCircleOutlined, MinusCircleOutlined } from '@ant-design/icons';
+import Axios from 'axios';
 
 import store from '../../store';
+import { url_default } from "../../api/index";
 
 
 class Sites extends React.Component {
@@ -15,6 +18,25 @@ class Sites extends React.Component {
         this.state = store.getState().sitesReducer
 
         store.subscribe(this.handleStoreChange);
+    }
+
+    async componentDidMount() {
+
+        try{
+            const res = await Axios.get(url_default);
+            const { data } = res;
+    
+            const action = {
+                type: "INIT_SITES",
+                data
+            }
+    
+            store.dispatch(action);
+        }catch{
+            alert("Errors: Get sites from database")
+        }
+
+        
     }
 
     handleAddClick = () => {

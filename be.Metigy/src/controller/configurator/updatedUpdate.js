@@ -1,6 +1,6 @@
 'use strict';
 
-const DB = require('../../db/mysqlDB');
+const DB = require('../../../db/mysqlDB');
 
 module.exports = async (ctx) => {
     ctx.status = 400;

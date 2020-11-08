@@ -1,9 +1,13 @@
+'use strict';
+
 import React from 'react';
 import { Input, Button, List } from 'antd';
 import 'antd/dist/antd.css';
 import { PlusCircleOutlined, MinusCircleOutlined } from '@ant-design/icons';
+import Axios from 'axios';
 
 import store from '../../store';
+import { url_default } from "../../api/index";
 
 
 class Keywords extends React.Component {
@@ -14,6 +18,25 @@ class Keywords extends React.Component {
         this.state = store.getState().keywordsReducer
 
         store.subscribe(this.handleStoreChange);
+    }
+
+    async componentDidMount() {
+
+        try {
+            const res = await Axios.get(url_default);
+            const { data } = res;
+    
+            const action = {
+                type: "INIT_KEYWORDS",
+                data
+            }
+    
+            store.dispatch(action);
+        }catch{
+            alert("Errors: Get keywords from database")
+        }
+
+        
     }
 
     handleAddClick = () => {

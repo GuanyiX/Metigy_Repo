@@ -1,25 +1,9 @@
+const filterSettings = require("../reference/importConverter");
+
 const defaultSettingsState = {
     plainOptions: ['Chrome', 'Firefox', 'Explorer', 'Safari', 'Opera'],
-    incognito_checked: true,
-    chrome_checked: false,
-    firefox_checked: false,
-    explorer_checked: false,
-    safari_checked: true,
-    opera_checked: false,
-    visited_page_checked: true,
-    device_reset_checked: false,
-    vinn_reset_checked: false,
-    phone_reset_checked: true,
-    mobile_data_checked: false,
-    fly_mode_checked: true,
-    remove_cookies_checked: true,
-    change_resolutions_checked: false,
-    mouse_tracks_checked: false,
-    data_saving_checked: true,
-    random_generate_checked: false,
-    analytic_protection_checked: true,
-    remove_history_checked: false
 }
+
 
 export const settingsReducer = (state = defaultSettingsState, action) => {
     const newState = JSON.parse(JSON.stringify(state))
@@ -99,8 +83,14 @@ export const settingsReducer = (state = defaultSettingsState, action) => {
             return newState
 
         case "TICK_REMOVE_HISTORY":
-            newState.remove_history_checked= !state.remove_history_checked
+            newState.remove_history_checked = !state.remove_history_checked
             return newState
+
+        case "INIT_SETTINGS":
+            const { data } = action;
+            const newSettingsObj = filterSettings(data, newState);
+            let obj = Object.assign(newState, newSettingsObj);
+            return obj;
 
         default:
             return state;

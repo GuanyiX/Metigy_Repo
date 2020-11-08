@@ -1,9 +1,9 @@
 'use strict';
 
-const DB = require('../../db/mysqlDB');
+const DB = require('../../../db/mysqlDB');
 
 module.exports = async (ctx) => {
-    const res = DB.query('DELETE FROM updatedinfo');
+    const res = DB.query('DELETE FROM updatedinfo;');
 
     if (res) {
         ctx.status = 200;
