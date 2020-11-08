@@ -15,7 +15,7 @@ Related skills:
 - Postman
 
 
-Pre-requisite:
+Instructions
 
 - cd ./be.Metigy 
 - npm install
