@@ -1,0 +1,10 @@
+1. 如何对已经完成的全栈项目使用Docker Compose进行打包
+  - 如何制作 MySQL, MongoDB的container 
+  - 如何实现container之间的通信
+  - 如何对前端React app进行打包
+  - MySQL有没有和Mongo Atlas类似的云服务？
+  
+2. Code review
+  - No integration tests
+  - No logging
+ 
