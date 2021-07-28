@@ -50,8 +50,6 @@ Frontend:
 
 
 What I didn't do:
-
-- Docker compose: The reason is I am not familiar with Docker compose
 - Responsive design: Limited time and don't have a UI design
 - Numbers in settings component are not saved: I don't really understand the logic in this part, but we can use the same logic as the one in checkboxs.
 - Test scripts: Limited time and not sure if it is necessary
